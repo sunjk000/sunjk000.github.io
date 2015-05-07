@@ -1,3 +1,1 @@
-highlighter: pygments
-github: [Repository metadata]
-source: www
+permalink: /:title
