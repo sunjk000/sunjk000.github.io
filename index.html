@@ -9,7 +9,7 @@ title: 我的Blog
 	{% for post in site.posts %}
 	<li>{{ post.date | date_to_string }} <a href="{{ post.url }}">{{ post.title }}</a>
 	<br>
-	excerpt: {{ post.excerpt | strip_html }}
+	excerpt: {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
 	</li>
 	{% endfor %}
 </ul>
