@@ -1,1 +1,3 @@
 permalink: /:title
+testUrl: http://localhost:4000
+url: http://sunjk.so

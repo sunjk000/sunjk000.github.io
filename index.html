@@ -1,16 +1,21 @@
 ---
-layout: module1
-title: 我的Blog
+layout: default
+blogName: SunJK' Blog 
+welcome: Hi, I am an iOS developer from China.<br/> Just want to do something cool.
+navigation: 全部文章 
 ---
 
-<h2>{{ page.title }}</h2>
-<p>最新文章</p>
-<ul>
-	{% for post in site.posts %}
-	<li>{{ post.date | date_to_string }} <a href="{{ post.url }}">{{ post.title }}</a>
-	<br>
-	excerpt: {{ post.excerpt | strip_html }}
-	</li>
-	{% endfor %}
-</ul>
+{% for post in site.posts %}
+	<div class="article">
+		<div class="article_title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+		<div class="article_from"><span><a href="">{{ post.tag }}</a></span></div>
+		<div class="article_excerpt">
+			{{ post.excerpt | strip_html }}
+		</div>
+		<div class="article_time_btn"> • <span>{{ post.date | date_to_string }}</span>
+			<span class="readMore"><a href="{{ post.url }}">Read More</a></span>
+		</div>
+		<hr/>
+	</div>
+{% endfor %}
 

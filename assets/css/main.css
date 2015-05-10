@@ -1,0 +1,264 @@
+body {
+	background-color: rgba(242,242,242,1);
+	-webkit-font-smoothing: antialiased;
+	font-family: Helvetica;
+	overflow: hidden;
+	}
+	
+html a {
+	text-decoration: none;
+	}
+	
+html,body	{ 
+	padding: 0;
+	margin: 0 auto;
+	height: 100%; 
+	}
+	
+.hidden {
+  display: none !important; 
+  }
+  
+.maskView {
+	width: 100%;
+	position: fixed;
+	z-index:100;
+	top: 0px;
+	left: 0px;
+	right:0px;
+	bottom: 0px;
+	height:100%;
+	background-color: rgba(65,65,65,.97);
+	color: rgba(255,255,255,1);
+	letter-spacing: .05em;
+	}
+
+.cover-view-up {
+	top: 0px;
+	height: 44px;
+	line-height: 44px;
+	background-color: rgba(65,65,65,1);
+	}
+	
+.maskView a {
+	color: rgba(255,255,255,1);
+  text-decoration: none;
+	}
+	
+.headTitle {
+	position: absolute;
+	z-index:200;
+	width: 100%;
+	left: 0;
+	top: 10%;
+	height: 80px;
+	font-size: 1.7em;
+	line-height: 80px;
+	text-align: center;
+	opacity: 0;
+	}
+	
+.headTitle-cover-view-up {
+	width: 80%;/*980px;*/
+	left: 10%;
+	top: 0px;
+	font-size: 1.1em;
+	height: 44px;
+	line-height: 44px;
+	text-align: left;
+	}
+	
+.rightTitle {
+	float:right;
+	font-size: 0.9em;
+	}
+	
+.welcome {
+	position: absolute;
+	z-index: 300;
+	left:10%;
+	width: 80%;
+	top:20%;
+	height: 100px;
+	font-size: 1.2em;
+	text-align: center;
+	margin-top:10px;
+	opacity: 0;
+	}
+	
+.maskView	.actionButton {
+	position: absolute;
+	left:10%;
+	width: 80%;
+	bottom:40px;
+	margin-bottom:0px;	
+	height: auto;
+	}
+	
+.maskView	.actionButton a {
+	margin:0 auto;
+	color: rgba(255,255,255,1);
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 1.3em;
+  display: block;
+ 	}
+ 	
+.maskView	.actionButton a:hover {
+	color: rgba(0,136,204,1);
+	}
+	
+.desciption {
+	width: 80%;/*980px;*/
+	margin: 0px auto;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 54px;
+	margin-bottom: 10px;
+ 	background: transparent;
+ 	font-size: 1.1em;
+	text-align: left;
+	color: rgba(0,136,204,1);
+	}
+	
+.desciption a {
+	color: rgba(0,136,204,1);
+	}
+	
+/* article content*/
+.mainContent {
+	width: 80%;/*980px;*/
+	height:	100%;
+	margin: 0px auto;
+	padding-top: 10px;
+  margin-bottom: 30px;
+	background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(233,233,233,1);
+  border-top: 0;
+  box-shadow: 0 0 1px rgba(0,0,0,0.07);
+ 	display: block;
+  overflow-x: hidden;
+  overflow-y: hidden;
+ 	}
+ 	
+.mainContent .article {
+	width: 90%;
+	height: auto;
+	margin: 0px auto;
+	}
+	
+.mainContent .article .article_title {
+	height: auto;
+  color: rgba(0,0,0,1);
+  display: block;
+  font-size: 1.4em;
+  margin-bottom:10px;
+	}
+	
+.mainContent .article .article_title a {
+	color: rgba(0,0,0,1);
+	}
+	
+.mainContent .article .article_from {
+	height: 20px;
+	line-height: 20px;
+	color: rgba(0,0,0,1);
+  display: block;
+  font-size: 1.1em;
+	}
+	
+.mainContent .article .article_from a {
+	color: rgba(0,136,204,1);
+	}
+	
+.mainContent .article .article_excerpt {
+	height: auto;
+  display: block;
+  font-size: 1em;
+  color: rgba(128,128,128,1);
+  padding-top:10px;
+  padding-bottom:10px;
+  line-height:1.5em;
+	}
+	
+.mainContent .article .article_time_btn {
+  color: rgba(128,128,128,1);
+	font-size: 1em;
+	}
+
+.mainContent .article .article_time_btn a {
+	color: rgba(128,128,128,1);
+	}
+	
+.mainContent .article .article_time_btn .readMore a {
+	float: right;
+	color: rgba(0,136,204,0.7);
+	}
+	
+.mainContent .article hr {
+	margin: 10px auto;
+  border: 0;
+  height: 1px;
+  background: rgba(233,233,233,1);
+ 	}
+ 	
+.footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0px;
+	z-index:100;
+	height: auto;
+	background-color: rgba(65,65,65,1);
+	color: rgba(255,255,255,1);
+	letter-spacing: .05em;
+	text-align: center;
+	font-size: 0.8em;
+	}
+	
+/* responsive style*/
+@media all and (max-width: 600px) {
+	.headTitle {
+		width: 100%;
+		text-align: center;
+		font-size: 1.3em;
+		}
+	.rightTitle {
+		display: none;
+		}
+	.desciption {
+		/*
+		width: 100%;
+		opacity:0;
+		height:0px;
+		*/
+		display: none;
+		}
+	.mainContent {
+		width: 100%;
+		}
+	.headTitle-cover-view-up {
+		width: 100%;
+		left: 0;
+		}
+	}
+	
+/* keyframe animation*/
+@-webkit-keyframes cover-view-up {
+0% {
+	height: 100%;
+	}
+100% {
+	height: 44px;
+	}
+}
+
+@-webkit-keyframes fadinTitle {
+0% {
+	opacity: 0;
+	}
+100% {
+	opacity: 1;
+	}
+}
