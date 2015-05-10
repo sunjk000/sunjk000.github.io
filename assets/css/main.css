@@ -133,6 +133,7 @@ html,body	{
 	height:	100%;
 	margin: 0px auto;
 	padding-top: 10px;
+	padding-bottom: 10px;
   margin-bottom: 30px;
 	background-color: rgba(255,255,255,1);
   border: 1px solid rgba(233,233,233,1);
