@@ -31,9 +31,19 @@
 			<a href="http://sunjk.so/#blog">{{ page.navigation }}</a> -> <a href="#"> {{ page.title }} </a>
 		</div>
 		<div class="mainContent">
-			<div class="article">
+			<!--div class="article">
 				{{ content }}
-			</div>
+			</div-->
+		<div class="article">
+		<div class="article_title">{{ post.title }}</a></div>
+		<div class="article_from"><span><a href="">{{ post.tag }}</a></span></div>
+		<div class="article_content">
+			{{ content }}
+		</div>
+		<div class="article_time_btn"> • <span>{{ post.date | date_to_string }}</span>
+		</div>
+	</div>
+	
 		</div>
 			
     <div class="footer hidden">
