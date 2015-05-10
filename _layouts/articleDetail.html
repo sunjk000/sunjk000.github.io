@@ -31,21 +31,16 @@
 			<a href="http://sunjk.so/#blog">{{ page.navigation }}</a> -> <a href="#"> {{ page.title }} </a>
 		</div>
 		<div class="mainContent">
-			<!--div class="article">
+			<div class="article">
+			<div class="article_title"><a>{{ post.title }}</a></div>
+			<div class="article_from"><span><a href="">{{ post.tag }}</a></span></div>
+			<div class="article_content">
 				{{ content }}
-			</div-->
-		<div class="article">
-		<div class="article_title">{{ post.title }}</a></div>
-		<div class="article_from"><span><a href="">{{ post.tag }}</a></span></div>
-		<div class="article_content">
-			{{ content }}
+			</div>
+			<div class="article_time_btn"> • <span>{{ post.date | date_to_string }}</span></div>
+			</div>
 		</div>
-		<div class="article_time_btn"> • <span>{{ post.date | date_to_string }}</span>
-		</div>
-	</div>
-	
-		</div>
-			
+		
     <div class="footer hidden">
     	© 2015/05/10 - Create by SunJK. <br/>Theme design refrence apple document.
     </div>
