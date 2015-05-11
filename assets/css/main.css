@@ -184,6 +184,15 @@ html,body	{
   line-height:1.5em;
 	}
 	
+.mainContent .article .article_content {
+	height: auto;
+  display: block;
+  font-size: 1em;
+  padding-top:10px;
+  padding-bottom:10px;
+  line-height:1.1em;
+	}
+	
 .mainContent .article .article_time_btn {
   color: rgba(128,128,128,1);
 	font-size: 1em;
@@ -218,6 +227,13 @@ html,body	{
 	font-size: 0.8em;
 	}
 	
+/* code highlight */
+.article_content pre {
+	word-break: normal;
+	overflow-x: auto;
+	}
+
+
 /* responsive style*/
 @media all and (max-width: 600px) {
 	.headTitle {
