@@ -1,0 +1,15 @@
+---
+layout: category
+blogName: SunJK' Blog 
+welcome: Hi, I am an iOS developer from China.<br/> Just want to do something cool.
+email: zhouchuang@enice.com.cn
+---
+
+{% for category in site.categories %}
+<div class="article">
+	<div class="category_row">
+		<a href="/category/{{ category | first }}" class="category_row_name">{{ category | first }} </a>
+		<span class="category_row_count">( {{ category | last | size }} )</span>
+	</div>
+</div>
+{% endfor %}

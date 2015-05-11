@@ -15,39 +15,29 @@
 				<a href="/#blog" class="blogButton">Enter the blog ></a>
 			</div>
 		</div>
-
+		
 		{% include navigation.html %}
 		
 		<div class="desciption">
 			<a href="/#blog">All Blogs</a>
+			{% if page.categoryName %}
+				-> <a href="/category/{{ page.categoryName }}">{{ page.categoryName }}</a>
+			{% endif %}
+			
 		</div>
-		
 		<div class="mainContent">
 			{{ content }}
 		</div>
 			
-    <div class="footer hidden">
+    <div class="footer">
     	© 2015/05/10 - Create by SunJK. <br/>Theme design refrence apple document.
     </div>
 		<script type="text/javascript">
-			if (!window.location.hash) {
-				var headTitle = document.querySelector('.headTitle');
-				var welcome = document.querySelector('.welcome'); 
-				$('.headTitle').css('-webkit-animation','fadinTitle 0.5s ease-out 1');
-				$('.welcome').css('-webkit-animation','fadinTitle 1s ease-out 0.5s 1');
-				headTitle.addEventListener("webkitAnimationEnd", function(){ 
-					//动画结束时事件 
+			$(document).ready(function() {
 					$('.headTitle').css('opacity', '1');
-				}, false); 	
-				welcome.addEventListener("webkitAnimationEnd", function(){ 
-					//动画结束时事件 
 					$('.welcome').css('opacity', '1');
-				}, false);
-			}
-			else {
-				$('.headTitle').css('opacity', '1');
-				$('.welcome').css('opacity', '1');
-			}
+					animationCoverUp();
+				});
 		</script>
 	</body>
 </html>

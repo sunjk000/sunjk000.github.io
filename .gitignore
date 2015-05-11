@@ -4,3 +4,5 @@ _site/
 .DS_Store
 commit.sh
 note
+readme
+newcategory.sh

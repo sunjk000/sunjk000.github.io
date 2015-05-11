@@ -1,4 +1,4 @@
 permalink: /blog/:title.html
-lurl: http://localhost:4000
+url: http://localhost:4000
 rurl: http://192.168.1.105:4000
-url: http://sunjk.so
+lurl: http://sunjk.so

@@ -1,21 +1,36 @@
 <html>
 	{% include commonHead.html %}
 	<body>
-		<div class="maskView cover-view-up" id="maskView">
-			<div class="headTitle headTitle-cover-view-up">
+		<div class="maskView" id="maskView">
+			<div class="headTitle">
 				<a href="http://sunjk.so">{{ page.blogName }}</a>
 				<span class="rightTitle">
-					iOS developer
+					zhouchuang@enice.com.cn
 				</span>
 			</div>
+			<div class="welcome">
+				{{ page.welcome }}
+			</div>
+			<div class="actionButton">
+				<a href="/#blog" class="blogButton">Enter the blog ></a>
+			</div>
 		</div>
+
+		{% include navigation.html %}
+		
 		<div class="desciption">
-			<a href="http://sunjk.so/#blog">{{ page.navigation }}</a> -> <a href="#"> {{ page.title }} </a>
+			<a href="/#blog">All Blogs</a> 
+			{% if page.category %}
+				-> <a href="/category/{{ page.category }}"> {{ page.category }} </a>
+			{% endif %}
+			{% if page.title %}
+				-> <a href="#"> {{ page.title }} </a>
+			{% endif %}
 		</div>
 		<div class="mainContent">
 			<div class="article">
 			<div class="article_title"><a>{{ page.title }}</a></div>
-			<div class="article_from"><span><a href="">{{ page.tag }}</a></span></div>
+			<div class="article_from"><span><a href="/category/{{ post.category }}">{{ page.category }}</a></span></div>
 			<div class="article_content">
 				{{ content }}
 			</div>
@@ -23,13 +38,13 @@
 			</div>
 		</div>
 		
-    <div class="footer hidden">
+    <div class="footer">
     	© 2015/05/10 - Create by SunJK. <br/>Theme design refrence apple document.
     </div>
 		<script type="text/javascript">
 				$(document).ready(function() {
 					$('.headTitle').css('opacity', '1');
-					initCss();
+					animationCoverUp();
 				});
 		</script>
 	</body>
