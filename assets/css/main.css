@@ -123,15 +123,19 @@ html,body	{
 	
 .navigation a {
 	color: rgba(0,136,204,1);
+	padding-bottom: 3px;
 	}
 
+.navigation .choose {
+	border-bottom: 2px solid rgba(0,136,204,1);
+	}
 	
 .desciption {
 	width: 80%;/*980px;*/
 	margin: 0px auto;
 	height: 30px;
 	line-height: 30px;
-	margin-top: 0px;
+	margin-top: 10px;
 	margin-bottom: 0px;
  	background: transparent;
  	font-size: 1em;
@@ -144,7 +148,8 @@ html,body	{
 .desciption a {
 	/*color: rgba(0,136,204,1);*/
 	color: rgba(65,65,65,1);
-	text-decoration: underline;
+	padding-bottom: 1px;
+	border-bottom: 1px solid rgba(65,65,65,1);
 	}
 	
 /* article content*/

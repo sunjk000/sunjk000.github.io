@@ -1,17 +1,17 @@
 <html>
 	{% include commonHead.html %}
 	<body>
-		<div class="maskView" id="maskView">
-			<div class="headTitle">
+		<div class="maskView cover-view-up" id="maskView">
+			<div class="headTitle headTitle-cover-view-up">
 				<a href="http://sunjk.so">{{ page.blogName }}</a>
 				<span class="rightTitle">
 					zhouchuang@enice.com.cn
 				</span>
 			</div>
-			<div class="welcome">
+			<div class="welcome hidden">
 				{{ page.welcome }}
 			</div>
-			<div class="actionButton">
+			<div class="actionButton hidden">
 				<a href="/#blog" class="blogButton">Enter the blog ></a>
 			</div>
 		</div>
@@ -43,8 +43,9 @@
     </div>
 		<script type="text/javascript">
 				$(document).ready(function() {
+					$('.navigation #categoryNavi').addClass('choose');
 					$('.headTitle').css('opacity', '1');
-					animationCoverUp();
+					initCss();
 				});
 		</script>
 	</body>

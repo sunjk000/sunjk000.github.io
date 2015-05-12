@@ -30,6 +30,10 @@
     	© 2015/05/10 - Create by SunJK. <br/>Theme design refrence apple document.
     </div>
 		<script type="text/javascript">
+		$(document).ready(function() {
+			
+			$('.navigation #blogNavi').addClass('choose');
+			
 			if (!window.location.hash) {
 				var headTitle = document.querySelector('.headTitle');
 				var welcome = document.querySelector('.welcome'); 
@@ -48,6 +52,8 @@
 				$('.headTitle').css('opacity', '1');
 				$('.welcome').css('opacity', '1');
 			}
+			
+		});
 		</script>
 	</body>
 </html>
