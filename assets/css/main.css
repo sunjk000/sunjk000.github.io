@@ -221,8 +221,8 @@ html,body	{
 
 .mainContent .article .article_content a {
 	text-decoration: underline;
-	/*color: rgba(7,174,219,1);*/
-	color: rgba(123,203,104,1);
+	color: #0645ad;
+	/*color: rgba(123,203,104,1);*/
 	}
 		
 .mainContent .article .article_time_btn {
@@ -284,9 +284,16 @@ html,body	{
 	
 table {
 	border: 1px;
+}
+
+table td {
+	text-align: center;
 	}
-
-
+	
+pre {
+	overflow-x: auto;
+	}
+	
 /* responsive style*/
 @media all and (max-width: 600px) {
 	.headTitle {
