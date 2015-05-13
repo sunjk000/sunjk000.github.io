@@ -8,7 +8,9 @@ email: zhouchuang@enice.com.cn
 {% for category in site.categories %}
 <div class="article">
 	<div class="category_row">
-		<a href="/category/{{ category | first }}" class="category_row_name">{{ category | first }} </a>
+		{% capture caName %}{{ category | first }}{% endcapture %}
+		{% assign page = site.categories.[caName][0] %}
+		<a href="/category/{{ page.category_en }}" class="category_row_name">{{ category | first }} </a>
 		<span class="category_row_count">( {{ category | last | size }} )</span>
 	</div>
 </div>

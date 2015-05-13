@@ -9,7 +9,7 @@ email: zhouchuang@enice.com.cn
 {% for post in site.posts %}
 	<div class="article">
 		<div class="article_title"><a href="{{ post.url }}">{{ post.title }}</a></div>
-		<div class="article_from"><span><a href="/category/{{ post.category }}">{{ post.category }}</a></span></div>
+		<div class="article_from"><span><a href="/category/{{ post.category_en }}">{{ post.category }}</a></span></div>
 		<div class="article_excerpt">
 			{{ post.excerpt | strip_html }}
 		</div>

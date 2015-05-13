@@ -216,6 +216,7 @@ html,body	{
   padding-top:10px;
   padding-bottom:10px;
   line-height:1.1em;
+  color: rgba(0,0,0,1);
 	}
 
 .mainContent .article .article_content a {
@@ -281,6 +282,10 @@ html,body	{
 	font-size: 0.8em;
 	}
 	
+table {
+	border: 1px;
+	}
+
 
 /* responsive style*/
 @media all and (max-width: 600px) {

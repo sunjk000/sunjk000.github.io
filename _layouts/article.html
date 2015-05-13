@@ -21,7 +21,7 @@
 		<div class="desciption">
 			<a href="/#blog">All Blogs</a> 
 			{% if page.category %}
-				-> <a href="/category/{{ page.category }}"> {{ page.category }} </a>
+				-> <a href="/category/{{ page.category_en }}"> {{ page.category }} </a>
 			{% endif %}
 			{% if page.title %}
 				-> <a href="#"> {{ page.title }} </a>
@@ -30,7 +30,7 @@
 		<div class="mainContent">
 			<div class="article">
 			<div class="article_title"><a>{{ page.title }}</a></div>
-			<div class="article_from"><span><a href="/category/{{ post.category }}">{{ page.category }}</a></span></div>
+			<div class="article_from"><span><a href="/category/{{ post.category_en }}">{{ page.category }}</a></span></div>
 			<div class="article_content">
 				{{ content }}
 			</div>
