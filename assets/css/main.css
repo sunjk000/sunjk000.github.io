@@ -283,7 +283,8 @@ html,body	{
 	}
 	
 table {
-	border: 1px;
+	border: 1px solid #aaa;
+	border-collapse: collapse;
 }
 
 table td {
