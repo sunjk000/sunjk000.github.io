@@ -7,7 +7,7 @@ title: aircrack on mac
 tags: icmp 
 ---
 ###  aircrack on mac with WPA/WPA2
-* `airmon-ng` `airodump-ng` `aireplay-ng` don't work for mac<br>
+* `airmon-ng` `airodump-ng` `aireplay-ng` doesn't work for mac<br>
 * use `airport` on mac sniff authentication handshake<br>
 * type `airport -s` on terminal, find channel of wifi which you wana crack
 <pre>
@@ -33,7 +33,7 @@ sunjk:wifi SunJK$ aircrack-ng -w wifi.txt a2.cap | grep 'handshake'
    8  64:09:80:19:44:7F  DDD                       WPA (0 handshake)
 </pre>
 * type `aircrack-ng -w dic.txt authen.cap` , choose `Index number of target network ` that you found. 
-* waiting for result.if you luck , you will get wifi password soon.
+* waiting for result.if you are lucky , you will get wifi password soon.
 
 ### External links:
 _<http://www.aircrack-ng.org/doku.php?id=wpa_capture>_<br>
