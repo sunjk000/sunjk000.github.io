@@ -8,7 +8,7 @@ tags: icmp
 ---
 ###  aircrack on mac with WPA/WPA2
 * `airmon-ng` `airodump-ng` `aireplay-ng` doesn't work for mac<br>
-* use `airport` on mac sniff authentication handshake<br>
+* use `airport` on mac to sniff authentication handshake<br>
 * type `airport -s` on terminal, find channel of wifi which you wana crack
 <pre>
                             SSID BSSID             RSSI CHANNEL HT CC SECURITY (auth/unicast/group)
