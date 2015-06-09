@@ -248,6 +248,14 @@ html,body	{
   background: rgba(233,233,233,1);
  	}
  	
+.article code {
+	border: 1px solid #ccc;
+  background-color: #fafafa;
+  font-size: 0.9em;
+  padding: 0px 3px;
+  border-radius: 2px;
+	}	
+	
 .mainContent .category_row {
 	height: 30px;
 	line-height: 30px;
